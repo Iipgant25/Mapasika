@@ -1,0 +1,255 @@
+body{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+}
+/* Nav bar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.navbar-brand span{
+    color: white;
+}
+.tombol{
+    background-color:#4de213;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+/* jumbotron */
+.jumbotron {
+    height: 440px;
+    position: relative;
+    
+}
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to top,rgba(0, 0,0,1), rgba(0, 0, 0, 0)),
+    url("../gambar/bg6.jpg");
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+.jumbotron .display-4 .wlc {
+    font-weight: 300;
+    font-size: 15px;
+    font-family: viga;
+    
+}
+
+section{
+    padding: 80px 18%;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    font-size: 40px;
+    font-family: viga;
+    line-height: 1.2;
+}
+.destination-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.col-content{
+    position: relative;
+}
+.col-content img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: all .3s cubic-bezier(.495,.05,.55,.95);
+    will-change: filter;
+}
+.col-content h5{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    left: 15px;
+    bottom: 60px;
+}
+.col-content p{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+}
+.col-content img:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+/* About */
+.g{
+    margin-top: 120px;
+    text-align: center;
+}
+.g img{
+    height: 400px;
+}
+.g h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.g h3 span {
+    font-weight: 500;
+}
+
+.g p{
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+    margin: 30px 0;
+}
+.a {
+    margin-top: 200px;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #212427;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+    margin-top: 20px;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.end{
+  color: white;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop version */
+@media (min-width: 992px) {
+    .navbar-brand .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 50px;
+    }
+    .nav-link span {
+        color: white;
+    }
+
+
+    .tombol{
+        background-color:#83e025;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 30px;
+        transition: transform .4s; 
+    }
+
+    .tombol:hover{
+        background-color:#1aee12;
+        transform: scale(1.2);
+        color: white;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+        margin-bottom: -15px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 540px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 30px;
+        
+    }
+    .jumbotron .display-4 span {
+        font-weight: 500;
+    }
+    
+    .jumbotron .display-4 .wlc {
+        font-weight: 300;
+        font-size: 25px;
+        font-family: viga;
+    }
+}

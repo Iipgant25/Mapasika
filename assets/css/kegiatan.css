@@ -1,0 +1,167 @@
+/* Nav bar */
+
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.navbar-brand span{
+    color: rgb(39, 36, 36);
+}
+
+.nav-link span {
+    color: rgb(39, 36, 36);
+}
+
+.tombol{
+    background-color:#4de213;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+
+
+/* Kegiatan */
+.title{
+    text-align: center;
+}
+
+.title h2{
+    color: #2c2d2e;
+    font-size: 40px;
+    font-family: viga;
+    line-height: 1.2;
+}
+
+.title h5{
+    color: #2c2d2e;
+    font-size: 30px;
+    font-family: viga;
+    line-height: 1.2;
+}
+
+.list .list-group a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-sm-4{
+    margin-top: 25px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.card .card-body h5{
+    padding: 10px;
+}
+.card .card-body p{
+     padding: 10px;
+}
+.card .card-body a{
+     padding: 10px;
+}
+
+
+/* footer */
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #212427;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+    margin-top: 20px;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.end{
+  color: white;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop version */
+@media (min-width: 992px) {
+    .navbar-brand .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 50px;
+    }
+
+    .navbar-brand span{
+        color: white;
+    }
+    
+    .nav-link span {
+        color: white;
+    }
+    
+
+
+    .tombol{
+        background-color:#83e025;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 30px;
+        transition: transform .4s; 
+    }
+
+    .tombol:hover{
+        background-color:#1aee12;
+        transform: scale(1.2);
+        color: white;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+        margin-bottom: -15px;
+    }
+    
+}
